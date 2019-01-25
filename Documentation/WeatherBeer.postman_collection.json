@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "75b8db93-3db9-4bf5-80b1-9a38ebb8f33a",
+		"name": "WeatherBeer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Beer Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://weatherbeer.azurewebsites.net/api/BeerTime?city=Heemskerk&country=NL",
+					"protocol": "http",
+					"host": [
+						"weatherbeer",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"BeerTime"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Heemskerk"
+						},
+						{
+							"key": "country",
+							"value": "NL"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AzureFunctionsVersion></AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
+    <PackageReference Include="NISOCountries.Core" Version="1.2.0" />
+    <PackageReference Include="NISOCountries.Ripe" Version="1.2.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.0" />
+    <PackageReference Include="SixLabors.Core" Version="1.0.0-dev000096" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-dev002278" />
+    <PackageReference Include="SixLabors.Fonts" Version="1.0.0-dev000121" />
+    <PackageReference Include="SixLabors.ImageSharp.Web" Version="1.0.0-dev000154" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-dev002278" />
+    <PackageReference Include="SixLabors.Shapes" Version="1.0.0-dev000104" />
+    <PackageReference Include="SixLabors.Shapes.Text" Version="1.0.0-dev000104" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="**/*" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="MapsFunction.cs" />
+    <None Remove="Singleton.cs" />
+    <None Remove="Models\BlobMessage.cs" />
+    <None Remove="Models\Wind.cs" />
+    <None Remove="Functions\BeerFunctions.cs" />
+    <None Remove="Functions\WeatherFunctions.cs" />
+    <None Remove="DAO\MapsDAO.cs" />
+    <None Remove="DAO\WeatherDAO.cs" />
+    <None Remove="Controllers\MapsController.cs" />
+    <None Remove="Controllers\WeatherController.cs" />
+    <None Remove="bin\Debug\netstandard2.0\BeerTime\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\WeatherFunctions\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\MapsFunction\function.json" />
+    <None Remove="Models\Cloud.cs" />
+    <None Remove="bin\Debug\netstandard2.0\BeerTime\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\WeatherFunctions\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\MapsFunction\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\BeerTime\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\WeatherFunctions\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\MapsFunction\function.json" />
+    <None Remove="Models\Coord.cs" />
+    <None Remove="Models\ImageHelper.cs" />
+    <None Remove="Models\Main.cs" />
+    <None Remove="Models\RootWeather.cs" />
+    <None Remove="Models\Sys.cs" />
+    <None Remove="Models\TriggerMessage.cs" />
+    <None Remove="Models\Weather.cs" />
+    <None Remove="host.json" />
+    <None Remove="local.settings.json" />
+    <None Remove="Functions\MapsFunction.cs" />
+    <None Remove="bin\Debug\netstandard2.0\BeerTime\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\MapsFunction\function.json" />
+    <None Remove="bin\Debug\netstandard2.0\WeatherFunctions\function.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DAO\" />
+    <Folder Include="Models\" />
+    <Folder Include="Functions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Rain.cs" />
+    <Compile Remove="Controllers\MapsController.cs" />
+  </ItemGroup>
+</Project>
